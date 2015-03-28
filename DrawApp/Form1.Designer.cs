@@ -90,12 +90,14 @@
             // rectangle_radioBtn
             // 
             this.rectangle_radioBtn.AutoSize = true;
+            this.rectangle_radioBtn.Checked = true;
             this.rectangle_radioBtn.Font = new System.Drawing.Font("DengXian", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rectangle_radioBtn.Location = new System.Drawing.Point(289, 6);
             this.rectangle_radioBtn.Margin = new System.Windows.Forms.Padding(4);
             this.rectangle_radioBtn.Name = "rectangle_radioBtn";
             this.rectangle_radioBtn.Size = new System.Drawing.Size(160, 38);
             this.rectangle_radioBtn.TabIndex = 13;
+            this.rectangle_radioBtn.TabStop = true;
             this.rectangle_radioBtn.Text = "Rectangle";
             this.rectangle_radioBtn.UseVisualStyleBackColor = true;
             this.rectangle_radioBtn.CheckedChanged += new System.EventHandler(this.rectangle_radioBtn_CheckedChanged);
@@ -111,6 +113,7 @@
             this.line_radioBtn.TabIndex = 12;
             this.line_radioBtn.Text = "Line";
             this.line_radioBtn.UseVisualStyleBackColor = true;
+            this.line_radioBtn.CheckedChanged += new System.EventHandler(this.line_radioBtn_CheckedChanged);
             // 
             // boxForDrawing
             // 
@@ -120,6 +123,9 @@
             this.boxForDrawing.Size = new System.Drawing.Size(1157, 629);
             this.boxForDrawing.TabIndex = 11;
             this.boxForDrawing.TabStop = false;
+            this.boxForDrawing.Paint += new System.Windows.Forms.PaintEventHandler(this.boxForDrawing_Paint);
+            this.boxForDrawing.MouseMove += new System.Windows.Forms.MouseEventHandler(this.boxForDrawing_MouseMove);
+            this.boxForDrawing.MouseUp += new System.Windows.Forms.MouseEventHandler(this.boxForDrawing_MouseUp);
             // 
             // Form1
             // 
