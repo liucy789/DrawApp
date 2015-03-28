@@ -1,0 +1,9 @@
+L:\..Универ\VS 2013\DrawApp\DrawApp\bin\Debug\DrawApp.exe.config
+L:\..Универ\VS 2013\DrawApp\DrawApp\bin\Debug\DrawApp.exe
+L:\..Универ\VS 2013\DrawApp\DrawApp\bin\Debug\DrawApp.pdb
+L:\..Универ\VS 2013\DrawApp\DrawApp\obj\Debug\DrawApp.csprojResolveAssemblyReference.cache
+L:\..Универ\VS 2013\DrawApp\DrawApp\obj\Debug\DrawApp.Form1.resources
+L:\..Универ\VS 2013\DrawApp\DrawApp\obj\Debug\DrawApp.Properties.Resources.resources
+L:\..Универ\VS 2013\DrawApp\DrawApp\obj\Debug\DrawApp.csproj.GenerateResource.Cache
+L:\..Универ\VS 2013\DrawApp\DrawApp\obj\Debug\DrawApp.exe
+L:\..Универ\VS 2013\DrawApp\DrawApp\obj\Debug\DrawApp.pdb
