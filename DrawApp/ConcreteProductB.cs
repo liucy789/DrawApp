@@ -8,6 +8,9 @@ namespace DrawApp
 {
     class DrawRectangle : DrawingShape
     {
-        public override string Draw() { return "ConcreteProductB"; }
+        public override string Draw() { 
+            return "ConcreteProductB"; 
+                       
+        }
     }
 }

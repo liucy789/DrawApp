@@ -9,15 +9,11 @@ namespace DrawApp
 {
     class Rectangle : Shape
     {
-        protected int width;
-        protected int height;
-
-        public Rectangle(Pen pen, int x, int y, int width, int height)
-            :base(pen, x, y)
+        public override void SetDimensions(int x1, int y1)
         {
-            this.width = width;
-            this.height = height;
+            throw new NotImplementedException();
         }
+
         public override DrawingShape FactoryMethod() { return new DrawRectangle(); }
 
     }

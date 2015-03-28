@@ -13,12 +13,27 @@ namespace DrawApp
         private int x;
         private int y;
 
-        public Shape(Pen pen, int x, int y)
-        {
-            this.pen = pen;
+        public Pen Pen {
+            get { return pen; }
+            set { pen = value; }
+        }
+
+        protected int X {
+            get { return x; }
+            set { x = value; }
+        }
+
+        public int Y {
+            get { return y; }
+            set { y = value; }
+        }
+
+        public void SetPosition(int x, int y) {
             this.x = x;
             this.y = y;
         }
+
+        public abstract void SetDimensions(int x1, int y1);
 
         public abstract DrawingShape FactoryMethod();
     }

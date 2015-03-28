@@ -7,3 +7,12 @@ L:\..Универ\VS 2013\DrawApp\DrawApp\obj\Debug\DrawApp.Properties.Resources
 L:\..Универ\VS 2013\DrawApp\DrawApp\obj\Debug\DrawApp.csproj.GenerateResource.Cache
 L:\..Универ\VS 2013\DrawApp\DrawApp\obj\Debug\DrawApp.exe
 L:\..Универ\VS 2013\DrawApp\DrawApp\obj\Debug\DrawApp.pdb
+L:\..Универ\Repositories\DrawApp\DrawApp\bin\Debug\DrawApp.exe.config
+L:\..Универ\Repositories\DrawApp\DrawApp\obj\Debug\DrawApp.exe
+L:\..Универ\Repositories\DrawApp\DrawApp\obj\Debug\DrawApp.pdb
+L:\..Универ\Repositories\DrawApp\DrawApp\obj\Debug\DrawApp.csprojResolveAssemblyReference.cache
+L:\..Универ\Repositories\DrawApp\DrawApp\obj\Debug\DrawApp.Form1.resources
+L:\..Универ\Repositories\DrawApp\DrawApp\obj\Debug\DrawApp.Properties.Resources.resources
+L:\..Универ\Repositories\DrawApp\DrawApp\obj\Debug\DrawApp.csproj.GenerateResource.Cache
+L:\..Универ\Repositories\DrawApp\DrawApp\bin\Debug\DrawApp.exe
+L:\..Универ\Repositories\DrawApp\DrawApp\bin\Debug\DrawApp.pdb
