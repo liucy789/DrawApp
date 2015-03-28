@@ -20,13 +20,11 @@ namespace DrawApp
         private void rectangle_radioBtn_CheckedChanged(object sender, EventArgs e)
         {
             // an array of creators
-            Shape[] shapes = { new Line(), new Rectangle() };
+            Shape shape = new Rectangle();
             // iterate over creators and create products
-            foreach (Shape shape in shapes)
-            {
+
                 DrawingShape drawingShape = shape.FactoryMethod();
                 Console.WriteLine("Created {0}", drawingShape.Draw());
-            }
         }
     }
 }

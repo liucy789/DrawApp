@@ -8,7 +8,7 @@ namespace DrawApp
 {
     abstract class DrawingShape
     {
-        abstract public string Draw();
+        abstract public void Draw();
 
     }
 }

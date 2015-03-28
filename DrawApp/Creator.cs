@@ -18,7 +18,7 @@ namespace DrawApp
             set { pen = value; }
         }
 
-        protected int X {
+        public int X {
             get { return x; }
             set { x = value; }
         }
