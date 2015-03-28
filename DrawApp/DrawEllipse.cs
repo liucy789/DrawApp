@@ -7,23 +7,24 @@ using System.Threading.Tasks;
 
 namespace DrawApp
 {
-    class DrawLine : DrawingShape
+    class DrawEllipse : DrawingShape
     {
         private Pen pen;
         private int x;
         private int y;
-        private int x1;
-        private int y1;
+        private int width;
+        private int height;
 
-        public DrawLine(Pen pen, int x, int y, int x1, int y1) {
+        public DrawEllipse(Pen pen, int x, int y, int width, int height) {
             this.pen = pen;
             this.x = x;
             this.y = y;
-            this.x1 = x1;
-            this.y1 = y1;
+            this.width = width;
+            this.height = height;
         }
+
         public override void Draw(Graphics g) {
-            g.DrawLine(pen, x, y, x1, y1);
+            g.DrawEllipse(pen, x, y, width, height);
             g.Save();
         }
     }

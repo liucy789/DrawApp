@@ -22,16 +22,9 @@ namespace DrawApp
             this.width = width;
             this.height = height;
         }
+
         public override void Draw(Graphics g) {
-        /*    g.DrawLine(pen, x, y, x + (width - x) / 2, height);
-            g.DrawLine(pen, x + (width - x) / 2, height, width, y);
-            g.DrawLine(pen, x, y, width, y);*/
-
-
             g.DrawRectangle(pen, x, y, width, height);
-
-            //   e.Graphics.DrawLine(MyPen, x, y, x + (x - w), h);
-            //   e.Graphics.DrawLine(MyPen, w, h, x + (x - w), h);
             g.Save();
         }
     }

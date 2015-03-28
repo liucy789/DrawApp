@@ -19,8 +19,8 @@ namespace DrawApp
         private Pen pen = new Pen(Color.FromArgb(69, 18, 123));
         int x;
         int y;
-        int width;
-        int height;
+        int x1;
+        int y1;
         Shape shape = new Rectangle();
 
         private void rectangle_radioBtn_CheckedChanged(object sender, EventArgs e) {
@@ -29,35 +29,24 @@ namespace DrawApp
 
         private void boxForDrawing_MouseMove(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
-            {
-                if (x == 0 || y == 0)
-                {
+            if (e.Button == MouseButtons.Left) {
+                if (x == 0 || y == 0) {
                     x = e.X;
                     y = e.Y;
                 }
-
-                else
-                {
-                    //    w = Math.Abs(e.X - x);
-                    //   h = Math.Abs(e.Y - y);
-                    //   w = e.X - x;
-                    //    h = e.Y - y;
-
-                    width = e.X;
-                    height = e.Y;
-
+                else {
+                    x1 = e.X;
+                    y1 = e.Y;
                 }
-                boxForDrawing.Refresh();
 
+                boxForDrawing.Refresh();
             }
         }
 
         private void boxForDrawing_MouseUp(object sender, MouseEventArgs e)
         {
-
             shape.SetPosition(x, y);
-            shape.SetDimensions(width, height);
+            shape.SetDimensions(x1, y1);
 
             Graphics g = Graphics.FromImage(boxForDrawing.Image);
             DrawingShape drawingShape = shape.FactoryMethod();
@@ -65,21 +54,36 @@ namespace DrawApp
 
             x = 0;
             y = 0;
-            width = 0;
-            height = 0;
+            x1 = 0;
+            y1 = 0;
         }
 
         private void boxForDrawing_Paint(object sender, PaintEventArgs e)
         {
             shape.SetPosition(x, y);
-            shape.SetDimensions(width, height);
+            shape.SetDimensions(x1, y1);
             DrawingShape drawingShape = shape.FactoryMethod();
             drawingShape.Draw(e.Graphics);
         }
 
-        private void line_radioBtn_CheckedChanged(object sender, EventArgs e)
-        {
+        private void line_radioBtn_CheckedChanged(object sender, EventArgs e) {
             shape = new Line();
+        }
+
+        private void square_radioBtn_CheckedChanged(object sender, EventArgs e) {
+            shape = new Square();
+        }
+
+        private void circle_radioBtn_CheckedChanged(object sender, EventArgs e) {
+            shape = new Circle();
+        }
+
+        private void ellipse_radioBtn_CheckedChanged(object sender, EventArgs e) {
+            shape = new Ellipse();
+        }
+
+        private void triangle_radioBtn_CheckedChanged(object sender, EventArgs e) {
+            shape = new Triangle();
         }
     }
 }

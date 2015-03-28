@@ -8,10 +8,15 @@ namespace DrawApp
 {
     class Line : Shape
     {
+        protected int x1;
+        protected int y1;
+
         public override void SetDimensions(int x1, int y1)
         {
-            throw new NotImplementedException();
+            this.x1 = x1;
+            this.y1 = y1;
         }
-        public override DrawingShape FactoryMethod() { return new DrawLine(); }
+
+        public override DrawingShape FactoryMethod() { return new DrawLine(Pen, X, Y, x1, y1); }
     }
 }

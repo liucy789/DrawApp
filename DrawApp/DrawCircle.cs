@@ -7,23 +7,22 @@ using System.Threading.Tasks;
 
 namespace DrawApp
 {
-    class DrawLine : DrawingShape
+    class DrawCircle : DrawingShape
     {
         private Pen pen;
         private int x;
         private int y;
-        private int x1;
-        private int y1;
+        private int radius;
 
-        public DrawLine(Pen pen, int x, int y, int x1, int y1) {
+        public DrawCircle(Pen pen, int x, int y, int radius) {
             this.pen = pen;
             this.x = x;
             this.y = y;
-            this.x1 = x1;
-            this.y1 = y1;
+            this.radius = radius;
         }
+
         public override void Draw(Graphics g) {
-            g.DrawLine(pen, x, y, x1, y1);
+            g.DrawEllipse(pen, x, y, radius, radius);
             g.Save();
         }
     }

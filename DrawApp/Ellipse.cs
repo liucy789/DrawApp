@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace DrawApp
 {
-    class Square : Shape
+    class Ellipse : Shape
     {
-        private int side;
+        private int width;
+        private int height;
 
         public override void SetDimensions(int x1, int y1) {
             if (x1 < X) {
@@ -16,20 +17,16 @@ namespace DrawApp
                 x1 ^= X;
                 X ^= x1;
             }
-            if ((x1 - X) < (y1 - Y)) 
-                this.side = x1 - X;
-            else
-                this.side = y1 - Y;
             if (y1 < Y) {
                 Y ^= y1;
                 y1 ^= Y;
                 Y ^= y1;
-                Y = Y + side;
             }
-            
-
+            this.width = x1 - X;
+            this.height = y1 - Y;
         }
 
-        public override DrawingShape FactoryMethod() { return new DrawSquare(Pen, X, Y, side); }
+        public override DrawingShape FactoryMethod() { return new DrawEllipse(Pen, X, Y, width, height); }
+
     }
 }

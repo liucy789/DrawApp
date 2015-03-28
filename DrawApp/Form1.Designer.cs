@@ -51,6 +51,7 @@
             this.triangle_radioBtn.TabIndex = 17;
             this.triangle_radioBtn.Text = "Triangle";
             this.triangle_radioBtn.UseVisualStyleBackColor = false;
+            this.triangle_radioBtn.CheckedChanged += new System.EventHandler(this.triangle_radioBtn_CheckedChanged);
             // 
             // circle_radioBtn
             // 
@@ -64,6 +65,7 @@
             this.circle_radioBtn.TabIndex = 16;
             this.circle_radioBtn.Text = "Circle";
             this.circle_radioBtn.UseVisualStyleBackColor = false;
+            this.circle_radioBtn.CheckedChanged += new System.EventHandler(this.circle_radioBtn_CheckedChanged);
             // 
             // ellipse_radioBtn
             // 
@@ -77,6 +79,7 @@
             this.ellipse_radioBtn.TabIndex = 15;
             this.ellipse_radioBtn.Text = "Ellipse";
             this.ellipse_radioBtn.UseVisualStyleBackColor = false;
+            this.ellipse_radioBtn.CheckedChanged += new System.EventHandler(this.ellipse_radioBtn_CheckedChanged);
             // 
             // square_radioBtn
             // 
@@ -90,6 +93,7 @@
             this.square_radioBtn.TabIndex = 14;
             this.square_radioBtn.Text = "Square";
             this.square_radioBtn.UseVisualStyleBackColor = false;
+            this.square_radioBtn.CheckedChanged += new System.EventHandler(this.square_radioBtn_CheckedChanged);
             // 
             // rectangle_radioBtn
             // 
