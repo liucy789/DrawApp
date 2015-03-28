@@ -60,14 +60,9 @@ namespace DrawApp
             shape.SetDimensions(width, height);
 
             Graphics g = Graphics.FromImage(boxForDrawing.Image);
-
             DrawingShape drawingShape = shape.FactoryMethod();
             drawingShape.Draw(g);
 
-           /* g.DrawLine(pen, x, y, x + (width - x) / 2, height);
-            g.DrawLine(pen, x + (width - x) / 2, height, width, y);
-            g.DrawLine(pen, x, y, width, y);
-            g.Save();*/
             x = 0;
             y = 0;
             width = 0;

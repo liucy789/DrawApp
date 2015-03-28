@@ -42,6 +42,7 @@
             // triangle_radioBtn
             // 
             this.triangle_radioBtn.AutoSize = true;
+            this.triangle_radioBtn.BackColor = System.Drawing.Color.Transparent;
             this.triangle_radioBtn.Font = new System.Drawing.Font("DengXian", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.triangle_radioBtn.Location = new System.Drawing.Point(824, 6);
             this.triangle_radioBtn.Margin = new System.Windows.Forms.Padding(4);
@@ -49,11 +50,12 @@
             this.triangle_radioBtn.Size = new System.Drawing.Size(137, 38);
             this.triangle_radioBtn.TabIndex = 17;
             this.triangle_radioBtn.Text = "Triangle";
-            this.triangle_radioBtn.UseVisualStyleBackColor = true;
+            this.triangle_radioBtn.UseVisualStyleBackColor = false;
             // 
             // circle_radioBtn
             // 
             this.circle_radioBtn.AutoSize = true;
+            this.circle_radioBtn.BackColor = System.Drawing.Color.Transparent;
             this.circle_radioBtn.Font = new System.Drawing.Font("DengXian", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.circle_radioBtn.Location = new System.Drawing.Point(710, 6);
             this.circle_radioBtn.Margin = new System.Windows.Forms.Padding(4);
@@ -61,11 +63,12 @@
             this.circle_radioBtn.Size = new System.Drawing.Size(106, 38);
             this.circle_radioBtn.TabIndex = 16;
             this.circle_radioBtn.Text = "Circle";
-            this.circle_radioBtn.UseVisualStyleBackColor = true;
+            this.circle_radioBtn.UseVisualStyleBackColor = false;
             // 
             // ellipse_radioBtn
             // 
             this.ellipse_radioBtn.AutoSize = true;
+            this.ellipse_radioBtn.BackColor = System.Drawing.Color.Transparent;
             this.ellipse_radioBtn.Font = new System.Drawing.Font("DengXian", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ellipse_radioBtn.Location = new System.Drawing.Point(589, 6);
             this.ellipse_radioBtn.Margin = new System.Windows.Forms.Padding(4);
@@ -73,11 +76,12 @@
             this.ellipse_radioBtn.Size = new System.Drawing.Size(113, 38);
             this.ellipse_radioBtn.TabIndex = 15;
             this.ellipse_radioBtn.Text = "Ellipse";
-            this.ellipse_radioBtn.UseVisualStyleBackColor = true;
+            this.ellipse_radioBtn.UseVisualStyleBackColor = false;
             // 
             // square_radioBtn
             // 
             this.square_radioBtn.AutoSize = true;
+            this.square_radioBtn.BackColor = System.Drawing.Color.Transparent;
             this.square_radioBtn.Font = new System.Drawing.Font("DengXian", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.square_radioBtn.Location = new System.Drawing.Point(457, 6);
             this.square_radioBtn.Margin = new System.Windows.Forms.Padding(4);
@@ -85,11 +89,12 @@
             this.square_radioBtn.Size = new System.Drawing.Size(124, 38);
             this.square_radioBtn.TabIndex = 14;
             this.square_radioBtn.Text = "Square";
-            this.square_radioBtn.UseVisualStyleBackColor = true;
+            this.square_radioBtn.UseVisualStyleBackColor = false;
             // 
             // rectangle_radioBtn
             // 
             this.rectangle_radioBtn.AutoSize = true;
+            this.rectangle_radioBtn.BackColor = System.Drawing.Color.Transparent;
             this.rectangle_radioBtn.Checked = true;
             this.rectangle_radioBtn.Font = new System.Drawing.Font("DengXian", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rectangle_radioBtn.Location = new System.Drawing.Point(289, 6);
@@ -99,12 +104,13 @@
             this.rectangle_radioBtn.TabIndex = 13;
             this.rectangle_radioBtn.TabStop = true;
             this.rectangle_radioBtn.Text = "Rectangle";
-            this.rectangle_radioBtn.UseVisualStyleBackColor = true;
+            this.rectangle_radioBtn.UseVisualStyleBackColor = false;
             this.rectangle_radioBtn.CheckedChanged += new System.EventHandler(this.rectangle_radioBtn_CheckedChanged);
             // 
             // line_radioBtn
             // 
             this.line_radioBtn.AutoSize = true;
+            this.line_radioBtn.BackColor = System.Drawing.Color.Transparent;
             this.line_radioBtn.Font = new System.Drawing.Font("DengXian", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.line_radioBtn.Location = new System.Drawing.Point(194, 6);
             this.line_radioBtn.Margin = new System.Windows.Forms.Padding(4);
@@ -112,7 +118,7 @@
             this.line_radioBtn.Size = new System.Drawing.Size(87, 38);
             this.line_radioBtn.TabIndex = 12;
             this.line_radioBtn.Text = "Line";
-            this.line_radioBtn.UseVisualStyleBackColor = true;
+            this.line_radioBtn.UseVisualStyleBackColor = false;
             this.line_radioBtn.CheckedChanged += new System.EventHandler(this.line_radioBtn_CheckedChanged);
             // 
             // boxForDrawing
@@ -131,6 +137,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1181, 689);
             this.Controls.Add(this.triangle_radioBtn);
             this.Controls.Add(this.circle_radioBtn);
