@@ -36,6 +36,7 @@
             this.rectangle_radioBtn = new System.Windows.Forms.RadioButton();
             this.line_radioBtn = new System.Windows.Forms.RadioButton();
             this.boxForDrawing = new System.Windows.Forms.PictureBox();
+            this.colorPanel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.boxForDrawing)).BeginInit();
             this.SuspendLayout();
             // 
@@ -137,12 +138,21 @@
             this.boxForDrawing.MouseMove += new System.Windows.Forms.MouseEventHandler(this.boxForDrawing_MouseMove);
             this.boxForDrawing.MouseUp += new System.Windows.Forms.MouseEventHandler(this.boxForDrawing_MouseUp);
             // 
+            // colorPanel1
+            // 
+            this.colorPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.colorPanel1.Location = new System.Drawing.Point(12, 6);
+            this.colorPanel1.Name = "colorPanel1";
+            this.colorPanel1.Size = new System.Drawing.Size(165, 36);
+            this.colorPanel1.TabIndex = 18;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1181, 689);
+            this.Controls.Add(this.colorPanel1);
             this.Controls.Add(this.triangle_radioBtn);
             this.Controls.Add(this.circle_radioBtn);
             this.Controls.Add(this.ellipse_radioBtn);
@@ -167,6 +177,7 @@
         private System.Windows.Forms.RadioButton rectangle_radioBtn;
         private System.Windows.Forms.RadioButton line_radioBtn;
         private System.Windows.Forms.PictureBox boxForDrawing;
+        private System.Windows.Forms.Panel colorPanel1;
     }
 }
 

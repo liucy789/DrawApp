@@ -12,8 +12,7 @@ namespace DrawApp
 {
     public partial class Form1 : Form
     {
-        public Form1()
-        {
+        public Form1() {
             InitializeComponent();
         }
         private Pen pen = new Pen(Color.FromArgb(69, 18, 123));
@@ -67,7 +66,10 @@ namespace DrawApp
         }
 
         private void line_radioBtn_CheckedChanged(object sender, EventArgs e) {
+            ColorDialog myDialog = new ColorDialog();
+            if (myDialog.ShowDialog() == DialogResult.OK)
             shape = new Line();
+            shape.Pen.Color = myDialog.Color;
         }
 
         private void square_radioBtn_CheckedChanged(object sender, EventArgs e) {
