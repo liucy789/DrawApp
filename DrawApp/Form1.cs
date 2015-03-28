@@ -15,7 +15,6 @@ namespace DrawApp
         public Form1() {
             InitializeComponent();
         }
-        private Pen pen = new Pen(Color.FromArgb(69, 18, 123));
         int x;
         int y;
         int x1;
@@ -26,8 +25,7 @@ namespace DrawApp
                 shape = new Rectangle();
         }
 
-        private void boxForDrawing_MouseMove(object sender, MouseEventArgs e)
-        {
+        private void boxForDrawing_MouseMove(object sender, MouseEventArgs e) {
             if (e.Button == MouseButtons.Left) {
                 if (x == 0 || y == 0) {
                     x = e.X;
@@ -37,13 +35,11 @@ namespace DrawApp
                     x1 = e.X;
                     y1 = e.Y;
                 }
-
                 boxForDrawing.Refresh();
             }
         }
 
-        private void boxForDrawing_MouseUp(object sender, MouseEventArgs e)
-        {
+        private void boxForDrawing_MouseUp(object sender, MouseEventArgs e) {
             shape.SetPosition(x, y);
             shape.SetDimensions(x1, y1);
 
@@ -57,8 +53,9 @@ namespace DrawApp
             y1 = 0;
         }
 
-        private void boxForDrawing_Paint(object sender, PaintEventArgs e)
-        {
+        private void boxForDrawing_Paint(object sender, PaintEventArgs e) {
+            shape.Pen.Color = colorPanel1.BackColor;
+            shape.Pen.Width = 5;
             shape.SetPosition(x, y);
             shape.SetDimensions(x1, y1);
             DrawingShape drawingShape = shape.FactoryMethod();
@@ -66,10 +63,7 @@ namespace DrawApp
         }
 
         private void line_radioBtn_CheckedChanged(object sender, EventArgs e) {
-            ColorDialog myDialog = new ColorDialog();
-            if (myDialog.ShowDialog() == DialogResult.OK)
             shape = new Line();
-            shape.Pen.Color = myDialog.Color;
         }
 
         private void square_radioBtn_CheckedChanged(object sender, EventArgs e) {
@@ -86,6 +80,16 @@ namespace DrawApp
 
         private void triangle_radioBtn_CheckedChanged(object sender, EventArgs e) {
             shape = new Triangle();
+        }
+
+        private void colorPanel1_MouseClick(object sender, MouseEventArgs e) {
+            ColorDialog myDialog = new ColorDialog();
+            if (myDialog.ShowDialog() == DialogResult.OK)
+                colorPanel1.BackColor = myDialog.Color;
+        }
+
+        private void button1_Click(object sender, EventArgs e) {
+            boxForDrawing.Image = Image.FromFile("L:/fon.jpg");
         }
     }
 }
